@@ -1,0 +1,302 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    min-height: 100vh; /* Ensures full height of viewport */
+    font-family: Arial, sans-serif;
+
+    /* Background Image */
+    background: url('./DSC05558.jpeg') no-repeat center center/cover;
+    background-attachment: fixed;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Ensures footer is at the bottom */
+    color: #000000;
+    text-align: center;
+}
+/* Container for logos */
+/* .logo-container styles */
+.logo-container {
+    position: fixed; /* Fixes the container in place */
+    bottom: 39rem; /* Adjust position */
+    left: 70%; /* Centers the container horizontally */
+    transform: translateX(-50%); /* Ensures it's perfectly centered */
+    z-index: 10; /* Keeps the container above other elements */
+    transition: 1.5s;
+}
+
+/* Apply Flexbox to the correct container */
+.container2 {
+    display: flex; /* Arrange logos in a row */
+    gap: 1.5rem; /* Adds space between logos */
+    justify-content: center; /* Centers the logos horizontally */
+    align-items: center; /* Vertically aligns logos */
+    transform: translateY(-20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+
+/* Individual logos */
+.logo {
+    width: clamp(60px, 8vw, 100px); /* Makes the logo size responsive */
+    height: auto; /* Keeps the aspect ratio */
+    transition: transform 0.3s ease; /* Adds hover effect */
+}
+
+.logo:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1920px) {
+    .logo-container {
+        gap: 1rem; /* Adjust the gap for smaller devices */
+        left: 70%;
+        bottom: 35rem;
+    }
+
+    .logo {
+        width: 80px; /* Adjust logo size for smaller devices */
+    }
+}
+@media (max-width: 1150px) {
+    .logo-container {
+        gap: 1rem; /* Adjust the gap for smaller devices */
+        left: 50%;
+        bottom: 9rem;
+    }
+
+    .logo {
+        width: 80px; /* Adjust logo size for smaller devices */
+    }
+}
+
+@media (max-width: 550px) {
+    .logo-container {
+        gap: 0.5rem; /* Adjust gap for very small screens */
+    }
+
+    .logo {
+        width: 60px; /* Further reduce logo size for very small screens */
+    }
+    
+}
+
+@media (max-width: 379px) {
+    .logo-container {
+        gap: 10; /* Adjust gap for very small screens */
+    }
+
+    .logo {
+        width: 49px; /* Further reduce logo size for very small screens */
+    }
+    
+}
+
+
+.mail {
+    font-size: 1rem;
+
+}
+
+.social-icons i{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 930px) {
+   .social-icons i{
+    font-size: 22px;
+   }
+   .mail{
+    font-size: 0.8rem;
+   }
+}
+
+.main-title {
+    font-size: clamp(1.5rem, 5vw, 4rem); /* Dynamically scales between 2rem and 4rem */
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 1.2;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px #0000004d; /* Adjusted for better readability */
+}
+
+.sub-title {
+    font-size: clamp(0.6rem, 3vw, 1.5rem); /* Dynamically scales between 1rem and 1.5rem */
+    margin-top: -2rem; /* Adjusted for spacing */
+    letter-spacing: clamp(4px, 1vw, 10px); /* Letter-spacing adjusts dynamically */
+    text-align: center;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px #0000004d;
+}
+
+
+/* Content Section */
+.content {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2rem;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 10%;
+    max-width: 80%;
+    flex-grow: 1; /* Ensures content takes up available space */
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.row {
+    padding: 0.9rem;
+    background: #00000000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.row:hover {
+    background: linear-gradient(90deg, #ffffff52, #ca0f0f00);
+    transition: color 0.3s ease;
+    
+}
+
+.container {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Footer Section */
+footer {
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 100%;
+    position: relative;
+    /* Ensures footer sticks at the bottom */
+    margin-top: auto; /* This ensures the footer pushes to the bottom when content is less than full viewport height */
+    transform: translateY(-20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00bcd4;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+
+/* Responsive Adjustments for tablets and smaller devices */
+@media (max-width: 930px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .content {
+        margin-top: 0;
+        margin-left: 5%;
+        padding: 1.5rem;
+    }
+
+    .row {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    footer a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .content {
+        margin-left: 5%;
+        padding: 1rem;
+        text-align: left; /* Center-align text for smaller screens */
+    }
+
+    .row {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 415px) {
+    .content {
+        margin-left: 5%;
+        padding: 1rem;
+        text-align: left; /* Center-align text for smaller screens */
+    }
+
+    .row {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.rem;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+}
+
+
