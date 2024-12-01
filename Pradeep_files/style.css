@@ -9,17 +9,14 @@
 }
 
 body {
-    min-height: 100vh; /* Ensures full height of the viewport */
-    display: flex; /* Flex layout for positioning footer at the bottom */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: space-between; /* Push footer to the bottom */
-    overflow-y: auto; /* Allows scrolling only when necessary */
-    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox to align content */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Push content to the top */
     background: url('./DSC05558.jpeg') no-repeat center center/cover;
     background-attachment: fixed;
     background-color: black;
-    color: #000000;
-    text-align: center;
+    color: rgb(0, 0, 0);
     transition: 1.5s;
 }
 /* Container for logos */
@@ -156,12 +153,11 @@ body {
 /* Content Section */
 .content {
     font-family: 'Times New Roman', Times, serif;
+    flex-grow: 1; /* Dynamically expand content area to fill space */
     padding: 2rem;
     text-align: left;
-    margin-top: 0;
-    margin-left: 10%;
+    margin: 0 auto;
     max-width: 80%;
-    flex-grow: 1; /* Ensures content takes up available space */
 }
 
 h1 {
@@ -211,9 +207,7 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     width: 100%;
-    margin-top: auto; /* Ensures the footer is pushed to the bottom */
-    transform: translateY(-20px);
-    animation: fadeInUp 1.5s ease-out forwards;
+    margin-top: auto; /* Push footer to the bottom when content is less */
 }
 
 
@@ -264,12 +258,15 @@ footer p {
 
 @media (max-width: 550px) {
     body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow: hidden; /* Prevent unwanted scrolling */
     }
 
     .content {
-        margin-left: 0; /* Remove side margin */
-        padding: 1rem;  /* Compact padding */
+        padding: 1rem; /* Compact padding for smaller devices */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Reduce font size in footer */
     }
 
     .logo-container {
