@@ -262,7 +262,6 @@ footer p {
     }
 
     .content {
-        margin-left: 0; /* Remove side margin */
         padding: 1rem;  /* Compact padding */
     }
     footer {
