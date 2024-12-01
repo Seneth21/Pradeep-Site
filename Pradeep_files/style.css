@@ -258,15 +258,12 @@ footer p {
 
 @media (max-width: 550px) {
     body {
-        overflow: hidden; /* Prevent unwanted scrolling */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     .content {
-        padding: 1rem; /* Compact padding for smaller devices */
-    }
-
-    footer {
-        font-size: 0.8rem; /* Reduce font size in footer */
+        margin-left: 0; /* Remove side margin */
+        padding: 1rem;  /* Compact padding */
     }
 
     .logo-container {
