@@ -9,14 +9,15 @@
 }
 
 body {
-    min-height: 100vh; /* Ensures full height of viewport */
+    min-height: 100vh; /* Ensures full height of the viewport */
+    display: flex; /* Flex layout for positioning footer at the bottom */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Push footer to the bottom */
+    overflow-y: auto; /* Allows scrolling only when necessary */
     font-family: Arial, sans-serif;
     background: url('./DSC05558.jpeg') no-repeat center center/cover;
     background-attachment: fixed;
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  /* Ensures footer is at the bottom */
     color: #000000;
     text-align: center;
     transition: 1.5s;
@@ -86,6 +87,13 @@ body {
 
     .logo {
         width: 60px; /* Further reduce logo size for very small screens */
+    }
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    footer {
+        font-size: 0.8rem;
     }
     
 }
@@ -198,13 +206,12 @@ h1 {
 
 /* Footer Section */
 footer {
-    position: static;
     background: linear-gradient(180deg, #ffffff, #ffffff);
     padding: 1rem;
     text-align: center;
     font-size: 0.9rem;
     width: 100%;
-    margin-top: auto; /* This ensures the footer pushes to the bottom when content is less than full viewport height */
+    margin-top: auto; /* Ensures the footer is pushed to the bottom */
     transform: translateY(-20px);
     animation: fadeInUp 1.5s ease-out forwards;
 }
