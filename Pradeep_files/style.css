@@ -270,7 +270,7 @@ footer p {
 
     .logo-container {
         left: 50%; /* Re-center */
-        bottom: 5rem; /* Adjust vertical position */
+        bottom: rem; /* Adjust vertical position */
     }
 
     .main-title {
