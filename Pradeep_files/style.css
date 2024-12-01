@@ -265,6 +265,9 @@ footer p {
         margin-left: 0; /* Remove side margin */
         padding: 1rem;  /* Compact padding */
     }
+    footer {
+        font-size: 0.8rem; /* Reduce font size in footer */
+    }
 
     .logo-container {
         left: 50%; /* Re-center */
