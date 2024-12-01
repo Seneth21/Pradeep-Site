@@ -73,7 +73,7 @@ body {
     .logo-container {
         gap: 1rem; /* Adjust the gap for smaller devices */
         left: 50%;
-        
+        bottom: 9rem;
     }
 
     .logo {
@@ -259,23 +259,30 @@ footer p {
 }
 
 @media (max-width: 550px) {
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
     .content {
-        margin-left: 5%;
-        padding: 1rem;
-        text-align: left; /* Center-align text for smaller screens */
+        margin-left: 0; /* Remove side margin */
+        padding: 1rem;  /* Compact padding */
     }
 
-    .row {
-        font-size: 0.9rem;
-        padding: 0.5rem;
+    .logo-container {
+        left: 50%; /* Re-center */
+        bottom: 5rem; /* Adjust vertical position */
     }
 
-    footer {
-        font-size: 0.7rem;
+    .main-title {
+        font-size: clamp(1rem, 4vw, 2rem); /* Scale title */
     }
 
-    footer a {
-        font-size: 1rem;
+    .sub-title {
+        font-size: clamp(0.8rem, 2vw, 1rem); /* Scale subtitle */
+    }
+
+    .logo {
+        width: 50px; /* Ensure logos fit */
     }
 }
 
