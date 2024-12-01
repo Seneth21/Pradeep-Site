@@ -21,6 +21,7 @@ body {
     justify-content: space-between;  /* Ensures footer is at the bottom */
     color: #000000;
     text-align: center;
+    transition: 1.5s;
 }
 /* Container for logos */
 /* .logo-container styles */
@@ -72,7 +73,7 @@ body {
     .logo-container {
         gap: 1rem; /* Adjust the gap for smaller devices */
         left: 50%;
-        bottom: 9rem;
+        
     }
 
     .logo {
