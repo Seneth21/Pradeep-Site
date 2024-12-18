@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+span {
+    text-shadow: 0 0 25px #3d7fe2;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+    background-image: url('./background.jpg'); /* Set the background image */
+    background-position: center; /* Center the background */
+    background-size: cover; /* Cover the entire screen */
+    background-attachment: fixed; /* Prevent background from scrolling */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(-60px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header{
+    background-color: #000000; /* Black with 70% opacity */
+    background: linear-gradient(180deg,#000000,#000000b9, #00000000);
+    width: 100%;
+    box-shadow: 0 0 2500px #00000000;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 2.0rem 4%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.Music{
+    margin-top: px;
+    margin-right: 0px;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 550;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-shadow: 0 0 25px #3d7fe2;
+   
+}
+
+.Music:hover{
+    color: #3d7fe2;
+    transform: scale(1.01) translateY(-5px);
+    text-shadow: 0 0 25px #3d7fe2;
+}
+
+.Music:hover,
+.Music.active{
+    color: #3d7fe2;
+    border-bottom: 2.5px solid hsl(216, 74%, 56%);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .Music {
+        margin-left: 0vh;
+    }
+
+    .Graphic {
+        margin-left: -145vh;
+    }
+}
+
+@media (max-width: 1767px) {
+    .Music, .Graphic {
+        margin-left: 0; /* Center the items on small screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        text-align: center; /* Center align text */
+    }
+}
+
+/* Smaller screens (extra small devices like phones) */
+@media (max-width: 480px) {
+    .Music, .Graphic {
+        font-size: 1.5rem; /* Further reduce font size */
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20vh;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin: 30px;
+    margin-bottom: 60px;
+}
+
+.text-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    font-size: 1.8em;
+    margin-bottom: 23px;
+    padding: 15px;
+    transform: translateX(-5px);
+}
+
+.text-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    padding: 10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.footer {
+    background-color: #000000b3; /* Black with 70% opacity */
+    background: linear-gradient(180deg, #2a77eb36,#000000);
+    width: 150%;
+    box-shadow: 0 0 2500px #2071eb82;
+
+    position: fixed;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.social-icons {
+    transform: translateY(25px);
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: transparent;
+    border: 0.2rem solid #ffffff;
+    font-size: 1.35rem;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    color: #ffffff;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.1) translateY(-5px);
+    background-color: #ffffff;
+    box-shadow: 0 0 25px #3d7fe2;
+}
+
+.contact p {  
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateY(15px);
+    margin: 8px 0;
+    font-size: 1.0rem;
+}
+
+.contact a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact a:hover {
+    color: #3d7fe2;
+    text-shadow: 0 0 25px #3d7fe2;
+}
+
+.contact02 p {
+    transform: translateY(-1px);
+    margin: 8px 0;
+    font-size: 1.0rem;
+}
+
+.contact02 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact02 a:hover {
+    color: #3d7fe2;
+    text-shadow: 0 0 25px #3d7fe2;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    color: #3d7fe2;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #3d7fe2;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3d7fe2;
+    color: black;
+    box-shadow: 0 0 25px #3d7fe2;
+}
+
+@media (min-width: 768px) {
+    .about {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .text-content {
+        margin-left: 20px;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-content h1 {
+        font-size: 1.5em;
+    }
+
+    .text-content p {
+        font-size: 0.9em;
+    }
+}
+
+
+  
