@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+    font-family: 'Poppins', sans-serif;}
+    
+header {
+    background-color: #000000; /* Black with 70% opacity */
+    background: linear-gradient(180deg, #000000, #000000de, #00000048);
+    width: 100%; /* Adjusted width */
+    box-shadow: 0 0 2500px #000000;
+    position: fixed;
+    top: -21px; /* Adjusted to 0 for a better top positioning */
+    left: 0;
+    padding: 1rem 0; /* Adjusted padding for a sleeker look */
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: center; /* Centered content */
+    align-items: center;
+    z-index: 10000;
+}
+
+.container02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(-200px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+  }
+
+  .Music{
+    margin-top: px;
+    margin-right: 000px;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 550;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-shadow: 0 0 25px #3d7fe2;
+   
+}
+
+.Music:hover{
+    color: #3d7fe2;
+    transform: scale(1.01) translateY(-5px);
+    text-shadow: 0 0 25px #3d7fe2;
+}
+
+.Music:hover,
+.Music.active{
+    color: #3d7fe2;
+    border-bottom: 2.5px solid hsl(216, 74%, 56%);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .Music {
+        margin-left: 0vh;
+    }
+
+    .Graphic {
+        margin-left: -145vh;
+    }
+}
+
+@media (max-width: 1767px) {
+    .Music, .Graphic {
+        margin-left: 0; /* Center the items on small screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        text-align: center; /* Center align text */
+    }
+}
+
+/* Smaller screens (extra small devices like phones) */
+@media (max-width: 480px) {
+    .Music, .Graphic {
+        font-size: 1.5rem; /* Further reduce font size */
+    }
+}
+  
+  
+.Music02{
+    margin-top: -0px;
+    margin-right: -px;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 550;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-shadow: 0 0 25px #3d7fe2;
+   
+}
+
+.Music02:hover{
+    color: #3d7fe2;
+    transform: scale(1.01) translateY(-5px);
+    text-shadow: 0 0 25px #3d7fe2;
+}
+
+.Music02:hover,
+.Music02.active{
+    color: #3d7fe2;
+    border-bottom: 2.5px solid #3c7ee2;
+}
+
+.Music03{
+  margin-top: -0px;
+  margin-right: -168px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 550;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-shadow: 0 0 25px #3d7fe2;
+ 
+}
+
+.Music03:hover{
+  color: #3d7fe2;
+  transform: scale(1.01) translateY(-5px);
+  text-shadow: 0 0 25px #3d7fe2;
+}
+
+.Music03:hover,
+.Music03.active{
+  color: #3d7fe2;
+  border-bottom: 2.5px solid #3c7ee2;
+}
+
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: #3d7fe2;
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 85%);
+  --body-color: rgb(0, 0, 0);
+  --container-color: rgba(255, 255, 255, 0.9);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: 0.813rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: 0.875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  margin-top: 12px;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url('./background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.container {
+  display: grid;
+  place-items: center;
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+
+}
+
+.card__container {
+  display: grid;
+  row-gap: 3.5rem;
+  margin-bottom: 8rem;
+
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 328px;
+  border-radius: 1.5rem;
+  
+}
+
+.card__data {
+  width: 280px;
+  background-color: var(--container-color);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+  
+}
+
+.card__description {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 0.25rem;
+  color: #000000;
+}
+
+.card__title {
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: 0.75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.card__button:hover {
+  text-decoration: underline;
+}
+
+/* Hover animations */
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* Small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .card__data {
+    width: 250px;
+    padding: 1rem;
+  }
+  
+}
+
+/* Medium devices */
+@media screen and (min-width: 768px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/* Large devices */
+@media screen and (min-width: 1120px) {
+  .container {
+    height: 100vh;
+  }
+
+  .card__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card__img {
+    width: 348px;
+  }
+
+  .card__data {
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
+}
+        /* Container for the intro section */
+        .intro-section {
+          text-align: center;
+          color: #ffffff;
+          margin-bottom: 40px;
+          padding: 20px;
+          background-color: rgba(0, 0, 0, 0);
+          border-radius: 10px;
+          max-width: 90%;
+          margin: 0 auto -130px auto; /* Centered and added margin for spacing */
+      }
+      
+      .intro-section h1 {
+          font-size: 36px;
+          margin-top: 50px;
+          margin-bottom: px;
+      }
+      
+      .intro-section p {
+          font-size: 18px;
+          color: #cccccc;
+          line-height: 1.5;
+      }
+      
+      /* Make sure everything is responsive */
+      @media (max-width: 768px) {
+          .intro-section h1 {
+              font-size: 28px;
+          }
+          
+          .intro-section p {
+              font-size: 16px;
+          }
+      }
+
+/* Custom styling for the horizontal line */
+.custom-line {
+  border: none;
+  height: 2px;
+  background-color: #ffffff; /* White color */
+  margin: 20px auto;
+  width: 100vh; /* Use percentage for better responsiveness */
+  max-width: 600px; /* Limit the maximum width on larger screens */
+  border-radius: 5px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .custom-line {
+    width: 50vh; 
+  }
+}
+
+@media (max-width: 550px) {
+  .custom-line {
+    width: 40vh; 
+  }
+}
+
+.line-text{
+  margin-top: 3rem;
+  text-align: center;
+}
+.line-text02{
+  margin-top: 38rem;
+  text-align: center;
+}
+@media (max-width: 1553px) {
+  .line-text02{
+    margin-top: 40rem;
+  }
+}
+
+
+@media (max-width: 1120px) {
+  .line-text02{
+    margin-top: 0rem;
+  }
+}
+
+
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #ffffff; /* Black background */
+  width: 1000rem;
+  color: #000000; /* White text */
+  text-align: center;
+  padding: 0.4rem 1rem;
+  margin-top: 0rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-container p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.social-icons a {
+  color: #000000;
+  margin: 0 1rem 1rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #3d7fe2; /* Light blue on hover */
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 550px) {
+  footer .social-icons a {
+      font-size: 1.2rem;
+ 
+      
+  }
+}
+@media (max-width: 415px) {
+  footer .social-icons a {
+      font-size: 1.2rem;
+  }
+}
+
+
+
+/* Specific Animations */
+header.fade-in {
+  animation-delay: 0.2s;
+}
+
+.hero.fade-in {
+  animation-delay: 0.4s;
+}
+
+#biography.fade-in {
+  animation-delay: 0.6s;
+}
+
+#music.fade-in {
+  animation-delay: 0.8s;
+}
+
+/* Footer Styles (No Animation) */
+footer {
+  opacity: 1;
+  transform: none;
+}
+
+/* Sections */
+section {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+/* Fade-In-Up Animation */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.5s; /* Adjust delay if needed */
+}
+
+
