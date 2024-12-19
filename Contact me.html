@@ -6,6 +6,7 @@ body {
     background-color: #000; /* Black background */
     color: #fff; /* White text */
     background-image: url(./DSC05545.jpeg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: auto
@@ -53,16 +54,13 @@ h1 {
     color: #fff;
     margin: 0 1.8rem 1rem;
     font-size: 5rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-    
+    transition: color 0.3s ease, transform 0.3s ease-in; /* Smooth transition for hover effect */
 }
 
 .social-icons a:hover {
-    color: #3d7fe2; /* Light blue on hover */
-    transform: scale(1.2);
-    text-shadow: 0px 0px 50px #ffffffbe;
+    color: #ffffff; /* Light blue on hover */
+    transform: scale(1.2); /* Scale up the icon */
 }
-
 
 /* Contact Form Section */
 .contact-container {
@@ -212,3 +210,50 @@ header {
       transform: scale(1.2);
       transition: transform 0.3s ease-in;
   }
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .social-icons a {
+        font-size: 4rem;
+    }
+    .contact-form {
+        padding: 15px;
+    }
+    .navbar {
+        margin-left: 14px;
+    }
+}
+@media (max-width: 450px) {
+    .navbar {
+        margin-left: 10px
+        }
+
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .social-icons a {
+        font-size: 3rem;
+    }
+    button {
+        font-size: 0.9rem;
+    }
+    .navbar {
+        margin-left: 15px;
+    }
+}
+
+
+/* Add breakpoints for very small devices */
+@media (max-width: 320px) {
+    .social-icons a {
+        font-size: 1.8rem;
+    }
+    button {
+        font-size: 0.8rem;
+    }
+}
