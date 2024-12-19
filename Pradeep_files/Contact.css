@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    background-image: url(./DSC05545.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: auto
+
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* White text */
+}
+
+/* Social Media Section */
+.social-media-section {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #00000000; /* Black background */
+    margin-bottom: -35px;
+}
+
+.social-media-section h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    margin-top: 5rem; 
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 1.8rem 1rem;
+    font-size: 5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    
+}
+
+.social-icons a:hover {
+    color: #3d7fe2; /* Light blue on hover */
+    transform: scale(1.2);
+    text-shadow: 0px 0px 50px #ffffffbe;
+}
+
+
+/* Contact Form Section */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 60vh;
+}
+
+.contact-form {
+    background-color: #111111c9; /* Darker shade of black */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 80px rgba(255, 255, 255, 0.267); /* Subtle white shadow */
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff; /* White text */
+}
+
+input, textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #222; /* Darker background for inputs */
+    color: #fff; /* White text */
+    font-size: 14px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #bbb; /* Subtle placeholder color */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff; /* White button */
+    color: #000; /* Black text for the button */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd; /* Lighter hover effect */
+    color: #000;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .social-icons img {
+        width: 40px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons img {
+        width: 30px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
