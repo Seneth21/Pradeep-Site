@@ -20,7 +20,8 @@ body {
 
 /* Header Styles */
 header {
-    background: rgba(0, 0, 0, 0);
+    background-color: #000000; /* Black with 70% opacity */
+    background: linear-gradient(180deg, #000000, #00000067, #00000000);
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -37,6 +38,7 @@ header {
     margin-top: 20px;
     transform: translateY(-20px); /* Offset slightly above */
     animation: fadeInUp 1.5s ease-out forwards; /* Apply fade-in animation */
+    font-family:  'Times New Roman', Times, serif;
     
     
 }
@@ -47,6 +49,7 @@ header {
     color: #ffffff;
     text-decoration: none;
     transition: transform 0.3s ease-in;
+    
     
 }
 
@@ -61,6 +64,7 @@ header {
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
+    
 }
 
 .navbar a:hover {
