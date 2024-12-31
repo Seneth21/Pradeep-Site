@@ -6,19 +6,18 @@
   border: none;
   outline: none;
 }
-  
 
 header {
-background-color: #00000000; /* Black with 70% opacity */
-background: linear-gradient(180deg, #000000, #000000de, #00000000);
-width: 100%; /* Adjusted width */
-padding: 1rem;
-position: fixed;
-width: 100%;
-top: -12px;
-z-index: 1000;
-font-family:  'Times New Roman', Times, serif;
+  background-color: #000000; /* Black with 70% opacity */
+  background: linear-gradient(180deg, #000000, #00000067, #00000000);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  font-family:  'Times New Roman', Times, serif;
 }
+
 .navbar {
 display: flex;
 justify-content: space-between;
@@ -28,9 +27,63 @@ margin-top: 10px;
 transform: translateY(-20px); /* Offset slightly above */
 animation: fadeInUp 1.5s ease-out forwards; /* Apply fade-in animation */
 font-family:  'Times New Roman', Times, serif;
+}
 
+.hero {
+  background-image: url('./IMG_9070.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh; /* Extend height to make it impactful */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: -5px; /* Overlap with #biography */
+  position: relative;
+  transform: translateY(-20px); /* Offset slightly above */
+  animation: fadeInUp 1.5s ease-out forwards; /* Apply fade-in animation */
+}
+
+/* Add a subtle fade effect at the bottom */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px; /* Adjust height for blending */
+  background: linear-gradient(to bottom, #00000000 0%, #000000 100%);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0rem;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-content .btn {
+  background: #3d7fe2;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
 
 }
+
+.hero-content .btn:hover {
+  background: #fff;
+  color: #3d7fe2;
+}
+
 
 .navbar .logo {
   font-size: 1.4rem;
@@ -69,6 +122,7 @@ font-family:  'Times New Roman', Times, serif;
   opacity: 0;
   transform: translateY(-200px);
   animation: fadeInUp 1.5s ease-out forwards;
+  
 }
 
 @keyframes fadeInUp {
@@ -111,7 +165,7 @@ font-family:  'Times New Roman', Times, serif;
 
 /*=============== BASE ===============*/
 * {
-margin-top: 12px;
+
 padding: 0;
 box-sizing: border-box;
 text-decoration: none;
@@ -131,11 +185,12 @@ background-image: url('./background.jpg');
 background-position: center;
 background-size: cover;
 background-attachment: fixed;
+
 }
 
 
 
-img {
+.img {
 display: block;
 max-width: 100%;
 height: auto;
@@ -147,6 +202,7 @@ display: grid;
 place-items: center;
 margin-inline: 1.5rem;
 padding-block: 5rem;
+
 
 }
 
@@ -472,5 +528,4 @@ transform: translateY(-20px);
 animation: fadeInUp 1.5s ease-out forwards;
 animation-delay: 0.5s; /* Adjust delay if needed */
 }
-
 
